@@ -1,0 +1,160 @@
+.splash-view {
+	background: linear-gradient(to bottom right, #6E268A, #F00791);
+	height: 100vh;
+}
+
+.logo-white, .logo-pink{
+	width: 60%; 
+	display: block;
+	padding-top: 37vh;
+	margin: 0 auto;
+}
+
+.main-view {
+   background-image: url(../assets/images/ride.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo-white2 {
+	width: 30%; 
+	display: block;
+	padding-top: 3vh;
+	margin: 0 auto;
+}
+
+.logo-pink{
+	padding-top: 24vh;
+}
+
+.btn1, .btn2{
+	color:white;
+	background-color: transparent;
+	padding: 1em;
+	margin-left: 25vw;
+	margin-top: 10vh;
+	display: inline-block;
+}
+
+.btn2{
+	margin-left: 1vw;
+}
+
+body > div.main-view > div > button.btn.btn-secondary.btn2 > a {
+	color:white;
+}
+
+.btn-container {
+	width: 	100%;
+}
+
+.center {
+	text-align: center;
+}
+
+/*views signup*/
+
+h2 {
+	display:inline-block;
+	margin: 3vh auto 0 auto;
+}
+
+.fa-chevron-left {
+	color:#F00791;
+	margin: 3vh 0 0 2vw;
+}
+
+.join {
+	margin: 1vh auto;
+	text-align: center;
+}
+
+hr {
+	width: 80%;
+	margin: 1.5vh auto;
+}
+
+.flag-input {
+	width: 100%;
+	display:block;
+	margin:0 25vw 0 0;
+}
+
+#btn-next {
+	background-color: #F00791;
+	color:white; 
+	border:none;
+	font-size: 1em;
+	padding:1em;
+	margin-top: 5vh;
+
+}
+
+/*modal random code*/
+
+.random-code {
+	display:inline-block;
+}
+
+.anchor {
+	color:white;
+	text-decoration: none;
+}
+
+/*view verify*/
+.input-verify {
+	width: 30%;
+	margin: 0 auto;
+}
+
+#input-verify {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.btn-resend {
+	width: 40%;
+	margin: 0 auto;
+}
+
+
+#btn-next2 {
+	background-color: #F00791;
+	color:white; 
+	border:none;
+	font-size: 1em;
+	padding:1em;
+	margin-top: 45vh;
+}
+
+/*view form*/
+
+.fa-user, .fa-envelope, {
+	color:white;
+	text-shadow: 2px 1px 1px gray;
+}
+
+.icon {
+	border: 1px solid gray;
+	padding:0.75em;
+}
+
+.icon2 {
+	border: 1px solid gray;
+	padding:0.5em;
+}
+
+/*final view*/
+
+.finish {
+	background: linear-gradient(to bottom right, #6E268A, #F00791);
+	height: 100vh;
+}
+
+.fa-thumbs-up{
+	color:white;
+	margin:0 44vw;
+	display:block;
+}
