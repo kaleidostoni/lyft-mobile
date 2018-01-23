@@ -10,29 +10,51 @@ function loadPage(){
 var validate = function () {
 var signUpNumber = $('.number-input').val();
 if(signUpNumber.length >= 10){
-	$('#btn-next').removeClass('disabled').addClass('active');
+	$('#btn-next').attr('disabled', false);
 }else if(signUpNumber.length < 9){
-	alert('ingresa número de 10 dígitos valido');
-}
+	$('#btn-next').attr('disabled', true);
+}	
 }
 
+
 var random = Math.floor(Math.random() * 999) + 100;
-// esta función genera el còdigo random del modal 
+
+// esta función genera el código random del modal 
 $('#btn-next').click(function(){
-	$('#random-code').text(random);
+	var randomSaved = $('#random-code').text(random);
+	console.log(randomSaved);
 })
 
 //esta función verifica el código
-
-
 var validateCode = function () {
-var codeNumber = $('#input-verify').val();
-console.log(codeNumber);
+var codeNumber = parseInt($('#input-verify').val());
+//console.log(codeNumber);
 if(codeNumber===random){
-	$('#btn-next2').removeClass('disabled').addClass('active');
+	$('#btn-next2').attr('disabled', false);
+	$('#anchor').attr('href','form.html');
+	;
 	}
 }
 
+//esta función valida la form
+var formValidation = function(){
+	if($('#checkbox').checked()){
+		$('#btn-next').attr('disabled', false)
+	}
+}
+
+/*$('#info-form').bind('change keyup', function() {
+
+    if($(this).validate().checkForm()) {
+
+        $('#btn-next').attr('disabled', false);
+
+    } else {
+
+        $('#btn-next').attr('disabled', true);
+
+    } });
+*/
 
 
 $(document).ready(loadPage);
